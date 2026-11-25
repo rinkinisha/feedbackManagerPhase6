@@ -60,6 +60,24 @@ h1 {
 	margin: 0;
 }
 
+.site-nav {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1.4rem;
+}
+
+.site-nav a,
+.text-btn {
+	color: var(--accent-dark);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.site-nav a:hover,
+.text-btn:hover {
+	text-decoration: underline;
+}
+
 .container {
 	max-width: 980px;
 	margin: 0 auto 4rem;
@@ -138,10 +156,84 @@ textarea:focus {
 	background: var(--accent-dark);
 }
 
+.primary-btn:disabled,
+.text-btn:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
 .form-status {
 	min-height: 1.2rem;
 	color: var(--muted);
 	margin: 0;
+}
+
+.error-text,
+.inline-error {
+	color: #b63812;
+}
+
+.feedback-title-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.feedback-title-row h4 {
+	margin: 0;
+	font-size: 1.1rem;
+}
+
+.feedback-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.9rem;
+	margin-top: 0.8rem;
+}
+
+.text-btn {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	font: inherit;
+	cursor: pointer;
+}
+
+.danger-btn {
+	color: #b63812;
+}
+
+.edit-form,
+.assistant-form {
+	display: grid;
+	gap: 0.8rem;
+}
+
+.ai-result {
+	margin-top: 1rem;
+	padding: 1rem;
+	border-radius: 14px;
+	background: #f0f7ff;
+	color: var(--ink);
+	line-height: 1.6;
+}
+
+.summary-result p {
+	margin: 0 0 0.45rem;
+}
+
+.summary-result p:last-child {
+	margin-bottom: 0;
+}
+
+.assistant-form {
+	margin-top: 1.5rem;
+}
+
+.inline-error {
+	margin: 0.8rem 0 0;
 }
 
 .feedback-list {
